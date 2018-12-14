@@ -29,7 +29,7 @@ class SidebarContainer extends Component {
       },
       {
         name: "Settings",
-        route: "Home",
+        route: "Settings",
         icon: "settings"
       },
       {
