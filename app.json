@@ -26,5 +26,13 @@
       "supportsTablet": true
     },
     "description": ""
+  },
+  "firebase": {
+    "projectId": "---------",
+    "apiKey": "-------",
+    "authDomain": "-------",
+    "databaseURL": "-------",
+    "storageBucket": "-------",
+    "messagingSenderId": "---------"
   }
 }

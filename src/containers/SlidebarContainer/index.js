@@ -8,15 +8,40 @@ class SidebarContainer extends Component {
     super(props);
     this.data = [
       {
-        name: "Home",
+        name: "My Games",
         route: "Home",
-        icon: "home"
+        icon: "tennisball"
       },
       {
-        name: "Modal",
-        route: "Modal",
-        icon: "albums"
+        name: "Players",
+        route: "Home",
+        icon: "person"
       },
+      {
+        name: "Teams",
+        route: "Home",
+        icon: "people"
+      },
+      {
+        name: "Venues",
+        route: "Home",
+        icon: "compass"
+      },
+      {
+        name: "Settings",
+        route: "Home",
+        icon: "settings"
+      },
+      {
+        name: "Feedback",
+        route: "Home",
+        icon: "star"
+      },
+      // {
+      //   name: "Modal",
+      //   route: "Modal",
+      //   icon: "albums"
+      // },
       {
         name: "Logout",
         route: "Logout",

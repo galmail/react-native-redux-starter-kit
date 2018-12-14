@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import * as firebase from "firebase";
 import PropTypes from "prop-types";
 import { Image, Alert } from "react-native";
 import { Item, Input, Toast, Form } from "native-base";
@@ -57,11 +58,20 @@ class LoginForm extends Component {
   login() {
     if (this.props.valid) {
       let { email, password } = this.props.loginForm.values;
-      if (email === "demo@gmail.com"){
+      firebase.auth().signInWithEmailAndPassword(email, password)
+      .then(() => {
+        console.log('login success!');
         this.props.loginSuccess({email, password});
-      } else {
+      })
+      .catch((error) => {
+        console.log('invalid credentials: ', error);
         this.props.loginFail({email, password});
-      }
+      });
+      // if (email === "demo@gmail.com"){
+      //   this.props.loginSuccess({email, password});
+      // } else {
+      //   this.props.loginFail({email, password});
+      // }
     } else {
       Toast.show({
         text: "Enter Valid Username & password!",

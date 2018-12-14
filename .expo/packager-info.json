@@ -1,9 +1,9 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": null,
-  "packagerPort": null,
-  "packagerPid": null,
+  "expoServerPort": 19000,
+  "packagerPort": 19001,
+  "packagerPid": 16656,
   "expoServerNgrokUrl": "https://z3-akt.galmail.tt-mobile-app.exp.direct",
   "packagerNgrokUrl": "https://packager.z3-akt.galmail.tt-mobile-app.exp.direct",
-  "ngrokPid": 69169
+  "ngrokPid": 16688
 }
