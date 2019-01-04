@@ -4,7 +4,7 @@ import {
 import { StatusBar } from "react-native";
 import styles from "./styles";
 
-export default class Home extends Component {
+export default class Screen extends Component {
   render() {
     return (
       <Container style={styles.container}>
@@ -20,12 +20,12 @@ export default class Home extends Component {
             </Button>
           </Left>
           <Body style={styles.headerBody}>
-          <Title style={styles.textBody}>Home</Title>
+          <Title style={styles.textBody}>{this.props.title}</Title>
           </Body>
           <Right style={styles.headerRight}/>
         </Header>
         <Content>
-          <Text style={{ alignSelf: "center", marginTop: 10}}>Here goes the main screen</Text>
+          {this.props.children}
         </Content>
       </Container>
     );

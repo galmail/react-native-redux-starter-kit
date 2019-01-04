@@ -8,6 +8,11 @@ class SidebarContainer extends Component {
     super(props);
     this.data = [
       {
+        name: "My Profile",
+        route: "MyProfile",
+        icon: "contact"
+      },
+      {
         name: "My Games",
         route: "Home",
         icon: "tennisball"
